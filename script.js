@@ -298,15 +298,9 @@ function editarPerfil(){
 
 function logout(){
 
-    localStorage.removeItem("email");
-    localStorage.removeItem("senha");
-
-    
     localStorage.removeItem("logado");
-    window.location.href = "login.html";
 
-    document.getElementById("emailUsuario").textContent =
-    localStorage.getItem("email");
+    window.location.href = "login.html";
 }
 function mostrarSenha(){
 
