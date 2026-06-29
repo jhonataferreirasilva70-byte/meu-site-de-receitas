@@ -107,7 +107,8 @@ function entrar() {
         alert("Login realizado com sucesso!");
 
         // 👉 AQUI você manda para o site principal
-        window.location.href = "index.html";
+      alert("Login OK!");
+window.location.href = "index.html";
 
     } else {
         alert("Email ou senha incorretos!");
