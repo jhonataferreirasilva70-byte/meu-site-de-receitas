@@ -102,17 +102,16 @@ function entrar() {
     const emailSalvo = localStorage.getItem("email");
     const senhaSalva = localStorage.getItem("senha");
 
-    if (email === emailSalvo && senha === senhaSalva) {
+if(email === emailSalvo && senha === senhaSalva){
 
-        alert("Login realizado com sucesso!");
+    localStorage.setItem("logado", "sim");
+    window.location.href = "index.html";
 
-        // 👉 AQUI você manda para o site principal
-      
-window.location.href = "index.html";
+}else{
 
-    } else {
-        alert("Email ou senha incorretos!");
-    }
+    alert("Email ou senha incorretos!");
+
+}
 }
   function recuperarSenha() {
 
@@ -302,6 +301,8 @@ function logout(){
     localStorage.removeItem("email");
     localStorage.removeItem("senha");
 
+    
+    localStorage.removeItem("logado");
     window.location.href = "login.html";
 
     document.getElementById("emailUsuario").textContent =
