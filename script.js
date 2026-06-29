@@ -107,7 +107,7 @@ function entrar() {
         alert("Login realizado com sucesso!");
 
         // 👉 AQUI você manda para o site principal
-      alert("Login OK!");
+      
 window.location.href = "index.html";
 
     } else {
