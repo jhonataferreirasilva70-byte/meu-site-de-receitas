@@ -108,7 +108,7 @@ function entrar() {
 
         // 👉 AQUI você manda para o site principal
       
-window.location.href = "index.html";
+window.location.href = "home.html";
 
     } else {
         alert("Email ou senha incorretos!");
@@ -154,7 +154,7 @@ function salvarNovaSenha() {
 
     alert("Senha alterada com sucesso!");
 
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 function favoritar(receita){
